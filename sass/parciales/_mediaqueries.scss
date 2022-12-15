@@ -1,0 +1,651 @@
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .header {
+        height: auto;
+    }
+        
+    .header__contenedor {
+        flex-direction: column;
+    }
+
+    .hero__container {
+        flex-direction: column;
+    }
+
+    .hero__left, .hero__right {
+        width: 100%;
+    }
+
+    .serv__container {
+        flex-direction: column;
+    }
+
+    .hero__title{
+        padding-top: 10px;
+    }
+
+    .btn-open-sidebar {
+        display: inline-block;
+        background-color: #670d7e;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        color: #fff;}
+        
+    .nav__lista {
+        background-color: rgb(224, 224, 224);
+        width: 60%;
+        max-width: 400px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+        transition: transform 0.5s;
+        z-index: 100;}
+
+    #sidebar:target {
+        transform: translateX(0);}
+
+    .nav__item--oculto {
+        display: block;}
+
+    .subtitulo{
+        max-width: 100%;
+        margin: 0px;
+    }
+
+    .contact__grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 150px 300px 300px;
+    }
+
+    .menuDesktop{
+        display: none;
+    }
+
+    .btn-open-sidebar:hover{
+        color:#fff
+    }
+
+    .vectorial{
+        width: 400px;
+        height: 400px;
+    }
+
+}
+
+/* Movil */
+@media screen and (max-width: 600px) {
+    .nav__lista {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .hero__title {
+        font-size: 30px;
+        padding-top: 10px;
+    }
+
+    .hero__cap{
+        font-size: 20px;
+        margin: 1rem;
+    }
+
+    .nov__container{
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+    h3{
+        font-size: 20px;
+        margin: 5px 30px;
+        }
+
+    .nov__content{
+        width: 100%;
+        font-size: 10px;
+        gap: 20px;
+    }
+
+    .hiddentext{
+        display: none;
+    }
+
+    .hiddenbuttons{
+        display: none;
+    }
+
+    .bckcur{
+        padding-bottom: 0;
+    }
+
+    .dim{
+        height: 230px;
+    }
+
+    .letras{
+        font-size: 20px;
+        font-family: $tipografia;
+    }
+
+    .tac{
+        text-align: center;
+    }
+
+    .bcgBlancobis {
+        padding: 15px 2em;
+    }
+}
+
+/* Menu lateral */
+
+    .btn-open-sidebar {
+            display: inline-block;
+            background-color: #670d7e;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            color: #fff;
+    }
+
+    .nav__lista {
+        background-color: rgb(224, 224, 224);
+        width: 70%;
+        max-width: 400px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+        transition: transform 0.5s;
+        z-index: 100;
+    }
+
+    #sidebar:target {
+        transform: translateX(0);
+    }
+
+    .nav__item--oculto {
+        display: block;
+    }
+
+    .header__contenedor {
+        flex-direction: row;
+    }
+
+
+/*-----------MediaQueries-----------*/
+ 
+    @media (max-width: 1440px){ 
+        .cardForma{
+            flex-wrap: nowrap;
+        }
+        
+        .bajar{
+            margin-top: 920px;
+        }
+        }
+
+    @media (min-width: 1200px){
+        .header{
+            display: none;
+        }
+        .menuDesktop{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 5px;
+        }
+        .listItems{
+            color: #03415e;
+            display: inline;
+            padding: 0 10px;
+        }
+
+        .logomenu{
+            padding-top: 5px;
+            text-align: center;
+        }
+
+        .serv__title{
+            margin:0 7px
+        }
+
+}
+
+
+
+    /* sm */
+  
+  @media only screen and (max-width: 768px) {
+    .espacio {
+        padding: 2.5rem 0;
+    }
+    .hide-lg {
+        display: none !important;
+    }
+    .hide-sm {
+        display: block !important;
+    }
+
+    .indicador-i {
+        left: 0px;
+        top:6px;
+    }
+
+    .indicador-m {
+        left: 0px;
+        top:19px
+    }
+    #contacto {
+        background-image: none;
+        background: #201a3d;
+    }
+    #contacto h5 {
+        margin-bottom: 45px !important;
+    }
+
+    .menuDesktop{
+        display: none;
+    }
+
+    .bajar{
+        margin-top: 600px;
+    }
+
+    .vectorial{
+        margin-top: 1.8em;
+    }
+
+    .cont__service{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .minireg {
+        font-size: 25px;
+        text-align: center;
+        margin: 40px 120px;
+    }
+
+}
+/* xs */
+
+@media only screen and (max-width: 575px) {
+    .hide-lg {
+        display: none !important;
+    }
+    .hide-sm {
+        display: block !important;
+    }
+
+    .boxb{
+        margin: 29.5px;
+    }
+
+    .m-c{
+        text-align: center;
+    }
+
+    .serv__title{
+        margin: 0px 20px;
+    }
+
+    .serv__cap{
+        margin-bottom: 1rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .bcgAzul{
+        text-align: center;
+        margin: 0;
+    }
+
+    .bcgcul{
+        text-align: center;
+        padding: 7px;
+    }
+
+    .folkies{
+        text-align: center;
+    }
+
+    .pf{
+        text-transform: uppercase;
+    }
+
+    .subir{
+    margin-top: -40px;
+    }
+
+    .py-5 {
+        padding-top: 0rem!important;
+    }
+
+    .mq-xs{
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    .minireg {
+        font-size: 25px;
+        text-align: center;
+        margin: 40px 90px;
+    }
+}
+
+@media (max-width : 1200px){
+    
+    .mq-g{
+        margin-left: 15px;
+    }
+    .ontainer{
+        width: 90%;
+        min-width: auto;
+        margin: 20px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+        .contactInfo {
+            top: 0;
+            height: 550px;
+            position: relative;
+            box-shadow: none;
+        }
+}
+
+    .ontainer .contactForm{
+        position: relative;
+        width: calc(100% - 350px);
+        padding-left: 0;
+        margin-left: 0;
+        padding: 40px;
+        height: 550px;
+        box-shadow: none;
+    }
+
+}
+
+@media (max-width : 1199px){
+
+    .menuDesktop{
+        display: none;
+    }
+    .bajar{
+        margin-top: 800px;
+    }
+}
+
+@media (min-width : 1151px){
+.mq-s{
+    display: none;
+}
+}
+
+@media (max-width : 991px){
+    .contactSection{
+        background: #4489a8;
+    }
+
+    .ontainer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .ontainer .contactForm{
+        width: 100%;
+        height: auto;
+    }
+
+    .ontainer .contactInfo{
+        width: 100%;
+        height: auto;
+
+    } 
+    .menuDesktop{
+        display: none;
+    }   
+
+    .bajar{
+        margin-top: 700px;
+        }
+
+    .cont{
+        background: #F0F4EF;
+    }
+
+    .bckC{
+        background: $colorAzul;
+    }
+
+    .blueC{
+        color: #F0F4EF;
+    }
+
+    .contactUs{
+        padding: 40px;
+    }
+
+    .caja{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "fm"
+        "infor"
+        "map";
+      }
+
+      .infor .infor-Box div p{
+          color: $colorAzul;
+      }
+      .infor .infor-Box div a{
+        color: $colorAzul;
+    }
+    .cont h3 {
+        color: $colorAzul;
+    }
+
+    .sci li a {
+        color: $colorAzul;
+    }
+
+    .form-Box .row-50{
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .input-Box{
+        width: 100%;
+    }
+
+    .cont{
+        padding: 30px;
+    }
+
+    .map{
+        padding: 0;
+        min-height: 300px;
+    }
+
+    .infor .infor-Box div a{
+        color: $colorAzul;
+    }
+
+    .infor .infor-Box div p{
+        color: $colorAzul;
+    }
+}
+
+@media (max-width : 670px){
+
+    .bajar{
+    display: none;
+    }
+}
+
+@media (max-width : 600px){
+
+ .ontainer .contactForm{
+     padding: 25px;
+ }
+
+ .ontainer .contactInfo{
+    padding: 25px;
+}
+
+.ontainer .contactForm .formBox .inputBox.w50{
+    width: 100%;
+}
+
+.menuDesktop{
+    display: none;
+}
+
+.home__subtitle{
+    font-size: 15px;
+    margin: 5px;
+}
+
+.centrar{
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 2560){
+    .containerB{
+        height: 59vh;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .cardCursos{
+        padding: 0 1em;
+    }
+
+    .undiv{
+        flex-basis: 0 0 25%;
+        max-width: 25%;
+        padding: 0 1em;
+    }
+    
+    .containerB{
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 920px){
+
+    .container__vector img{
+        width: 500px;
+    }
+
+    .vectorial{
+        width: 370px;
+        height: 370px;
+    }
+
+    }
+
+@media screen and (max-width: 860px){
+    .container__vector img{
+        transform: scale(0);
+        animation: none;
+    }
+
+    .cover .container__info {
+        text-align: center;
+    }
+
+    .container__cover {
+        justify-content: center;
+    }
+}
+
+@media (max-width : 1280px){
+
+    .creamos{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+    .renglon{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width : 1151px){
+    .mq-g{
+        display: none;
+    }
+    }
+
+@media (max-width : 529px){
+    .minireg {
+        font-size: 25px;
+        text-align: center;
+        margin: 40px 50px 0;
+    }
+
+    .vectorial{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 1030px) {
+	.cont-serv{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height:auto;
+        margin-bottom: 40px;
+	}
+
+    .service{
+        height: 95vh;
+    }
+  }
+
+  @media (max-width: 579px){
+    .carta{
+        width: 490px;
+    }
+
+    .service {
+        height: 102vh;
+    }
+  }
+
+  @media (max-width: 516px){
+    width: 390px;
+    height: auto;
+    text-align: initial;
+  }
+
+  @media (max-width: 505px){
+  .carta {
+    width: 344px;
+    height: auto;
+    text-align: initial;
+}
+
+    .carta{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-column{
+        max-width: 22rem;
+    }
+ }

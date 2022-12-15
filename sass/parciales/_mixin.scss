@@ -1,0 +1,6 @@
+/*-------------Mixin----------*/
+@mixin flexDetails ($justifyC, $alignI) {
+    display: flex;
+    justify-content: $justifyC;
+    align-items: $alignI;
+  } 
